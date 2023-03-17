@@ -1,5 +1,6 @@
 <img src="logo_vsjs.png"><hr>VistaScripts.js is a new way to customize your VistaPanel.  For example, you can change the logo to a remote URL using VistaScripts.js
-<b> How to install: </b> Login to your MyOwnFreeHost account & click "Your Adverts", and then "Control Panel Advert Control" and copy paste the code below: 
+<br>
+<b> How to install: </b> Login to your MyOwnFreeHost account & click "Your Adverts", and then "Control Panel Advert Control", select your domain and copy & paste the code below: 
 <br>
 <h2> Initial Code </h2>
 <code>&lt;script src="https://cdn.jsdelivr.net/gh/GenerateApps/VistaScripts.js/VistaScripts.js"&gt;&lt;/script&gt;</code>
