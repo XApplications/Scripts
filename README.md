@@ -20,5 +20,5 @@ SetElementDetails('sitereptile', 'website', 'searchtext', PAGE.appGroups);
 &lt;/script&gt;</code>
 <br>
 Make sure to replace "https://app.example.com/u/view_account/'+username" with a different remote URL if needed.
-<h2> Can I use VistaScripts.js and VistaPanel Customizations at the same time? </h2>
+<h2> Can I use VistaScripts.js and Wybe Network VistaPanel Customizations at the same time? </h2>
 <p> Yes you can. </p>
