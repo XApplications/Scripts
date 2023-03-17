@@ -12,3 +12,4 @@ function SetElementDetails(k, u, d, a) {
 		}
 	}
 }
+        var username = document.getElementById("lblUserNameTxt").innerHTML;
