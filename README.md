@@ -14,5 +14,9 @@ Make sure to replace "https://github.com/GenerateApps/GenerateArea/raw/dev/asset
 <h2> Example code for changing link of element</h2>
 <code>&lt;script src="https://cdn.jsdelivr.net/gh/GenerateApps/VistaScripts.js/VistaScripts.js"&gt;&lt;/script&gt;
 &lt;script&gt;
-SetVpLogoImage("https://github.com/GenerateApps/GenerateArea/raw/dev/assets/default/img/garea_outline.png");
+SetElementDetails('sitereptile', 'https://app.example.com/u/view_account/'+username, 'url', PAGE.appGroups);
+SetElementDetails('sitereptile', 'Advanced Account Settings', 'itemdesc', PAGE.appGroups);
+SetElementDetails('sitereptile', 'website', 'searchtext', PAGE.appGroups);
 &lt;/script&gt;</code>
+<br>
+Make sure to replace "https://app.example.com/u/view_account/'+username" with a different remote URL if needed.
