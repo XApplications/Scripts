@@ -1,2 +1,2 @@
-# VistaPanelLogoChanger
-Change VistaPanel logo using Control Panel Ad Code in minutes
+# VistaScripts.js: VistaPanel Scripts
+<b> How to install: </b> Login to your MyOwnFreeHost account & click "Your Adverts", and then "Control Panel Advert Control" and copy paste the code below: 
