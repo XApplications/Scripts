@@ -34,3 +34,18 @@ function HideSidebar() {
 function GetVpUsername() {
 	return document.getElementById("lblUserNameTxt").innerHTML;
 }
+function GetVpVersion() {
+  return new Promise(function(resolve, reject) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'https://panel.myownfreehost.net/xml-api/version.php');
+    xhr.onload = function() {
+      if (xhr.status === 200) {
+        resolve(xhr.responseText);
+      }
+      else {
+        reject(new Error('Request failed.  Returned status of ' + xhr.status));
+      }
+    };
+    xhr.send();
+  });
+}
