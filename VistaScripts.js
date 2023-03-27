@@ -49,3 +49,10 @@ function GetVpVersion() {
     xhr.send();
   });
 }
+function LoadStylesheet(url) {
+  var link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = url;
+  document.head.appendChild(link);
+}
