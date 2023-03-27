@@ -1,3 +1,4 @@
+        var username = document.getElementById("lblUserNameTxt").innerHTML;
 function SetVpLogoImage(imageUrl) {
   document.getElementById("imgLogo").src = imageUrl;
 }
@@ -12,4 +13,7 @@ function SetElementDetails(k, u, d, a) {
 		}
 	}
 }
-        var username = document.getElementById("lblUserNameTxt").innerHTML;
+function HideSidebar() {
+	const sidebar = document.getElementById('sidebar');
+  sidebar.style.display = 'none';
+}
