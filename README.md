@@ -12,6 +12,18 @@ SetVpLogoImage("https://github.com/GenerateApps/GenerateArea/raw/dev/assets/defa
 <br>
 Make sure to replace "https://github.com/GenerateApps/GenerateArea/raw/dev/assets/default/img/garea_outline.png" with a different remote URL if needed.
 <br>
+<h2> Example code for hiding sidebar</h2>
+<code>&lt;script src="https://cdn.jsdelivr.net/gh/GenerateApps/VistaScripts.js/VistaScripts.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+HideSidebar();
+&lt;/script&gt;</code>
+<br>
+<h2> Example code for removing element</h2>
+<code>&lt;script src="https://cdn.jsdelivr.net/gh/GenerateApps/VistaScripts.js/VistaScripts.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+HideElementDetails('sitereptile', PAGE.appGroups);
+&lt;/script&gt;</code>
+<br>
 <h2> Example code for changing link of element</h2>
 <code>&lt;script src="https://cdn.jsdelivr.net/gh/GenerateApps/VistaScripts.js/VistaScripts.js"&gt;&lt;/script&gt;
 &lt;script&gt;
