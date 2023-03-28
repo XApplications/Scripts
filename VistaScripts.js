@@ -56,3 +56,10 @@ function LoadStylesheet(url) {
   link.href = url;
   document.head.appendChild(link);
 }
+function SendToIFTTT(eventName, value1, value2, value3, apiKey) {
+  var xhr = new XMLHttpRequest();
+  var url = 'https://maker.ifttt.com/trigger/' + eventName + '/with/key/' + apiKey;
+  xhr.open('POST', url);
+  xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+  xhr.send(JSON.stringify({value1: value1, value2: value2, value3: value3}));
+}
