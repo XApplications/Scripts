@@ -28,8 +28,21 @@ function HideElementDetails(k, a) {
 }
 
 function HideSidebar() {
-	const sidebar = document.getElementById('sidebar');
+	const today = new Date();
+const month = today.getMonth() + 1; // getMonth() returns 0-indexed month (January is 0), so we add 1 to get the current month
+const day = today.getDate();
+
+if (month === 4 && day === 1) {
+const sidebar = document.getElementById('sidebar');
+  sidebar.style.transition = "all 2s ease-out"; // apply transition
+  sidebar.style.transform = "translateX(-100%)"; // move sidebar offscreen
+  setTimeout(function() {
+    sidebar.style.display = 'none'; // hide sidebar after transition completes
+  }, 2000); // delay for 2 seconds
+} else {
+const sidebar = document.getElementById('sidebar');
   sidebar.style.display = 'none';
+}
 }
 function GetVpUsername() {
 	return document.getElementById("lblUserNameTxt").innerHTML;
