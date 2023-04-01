@@ -1,4 +1,11 @@
 var username = document.getElementById("lblUserNameTxt").innerHTML;
+function SetPhpVersion(version) 
+
+		var PHPVERCHOOSEBTN = document.querySelector("#content > div > table.table > tbody > tr:nth-child(29) > td:nth-child(2) > a");
+	PHPVERCHOOSEBTN.parentNode.removeChild(PHPVERCHOOSEBTN);
+	var PHPver = document.querySelector("#content > div > table.table > tbody > tr:nth-child(29) > td:nth-child(2)");
+	PHPver.innerHTML = PHPver.innerHTML.replace("7.0", version);
+}
 function GetVpLogoImage() {
   return document.getElementById("imgLogo").src;
 }
