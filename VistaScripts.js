@@ -1,6 +1,8 @@
 var username = document.getElementById("lblUserNameTxt").innerHTML;
 function SetPhpVersion(version) 
-
+/* 
+* This code was written by SpookyKipper (https://github.com/SpookyKipper/) and Deveroonie (https://github.com/Deveroonie/)
+*/
 		var PHPVERCHOOSEBTN = document.querySelector("#content > div > table.table > tbody > tr:nth-child(29) > td:nth-child(2) > a");
 	PHPVERCHOOSEBTN.parentNode.removeChild(PHPVERCHOOSEBTN);
 	var PHPver = document.querySelector("#content > div > table.table > tbody > tr:nth-child(29) > td:nth-child(2)");
