@@ -1,12 +1,39 @@
-var username = document.getElementById("lblUserNameTxt").innerHTML;
+var username = document.getElementById("lblUserNameTxt").innerHTML;\
+function GetPageInfo() {
+/* 
+* This code was written by SpookyKipper (https://github.com/SpookyKipper/) and Deveroonie (https://github.com/Deveroonie/)
+*/ 
+	return urlParams.get('option');
+}
 function SetPhpVersion(version) 
 /* 
 * This code was written by SpookyKipper (https://github.com/SpookyKipper/) and Deveroonie (https://github.com/Deveroonie/)
-*/
-		var PHPVERCHOOSEBTN = document.querySelector("#content > div > table.table > tbody > tr:nth-child(29) > td:nth-child(2) > a");
-	PHPVERCHOOSEBTN.parentNode.removeChild(PHPVERCHOOSEBTN);
-	var PHPver = document.querySelector("#content > div > table.table > tbody > tr:nth-child(29) > td:nth-child(2)");
-	PHPver.innerHTML = PHPver.innerHTML.replace("7.0", version);
+*/ 
+if (GetPageInfo() == "accountsettings") {
+var PHPVERCHOOSEBTN = document.querySelector("#content > div > table.table > tbody > tr:nth-child(29) > td:nth-child(2) > a");
+PHPVERCHOOSEBTN.parentNode.removeChild(PHPVERCHOOSEBTN);
+var PHPver = document.querySelector("#content > div > table.table > tbody > tr:nth-child(29) > td:nth-child(2)");
+PHPver.innerHTML = PHPver.innerHTML.replace("7.0", version);
+}
+}
+function SetSslPageText(text2) {
+/* 
+* This code was written by SpookyKipper (https://github.com/SpookyKipper/) and Deveroonie (https://github.com/Deveroonie/)
+*/ 
+	if (GetPageInfo() == "sslconfigure") {
+
+	var alert = document.querySelector("#content > div > div");
+	alert.classList.remove('alert-warning');
+	alert.classList.add('alert-info');
+
+	var alertlogo = document.querySelector("#content > div > div > span");
+	alertlogo.classList.remove('glyphicon-exclamation-sign');
+	alertlogo.classList.add('glyphicon-info-sign');
+
+	var alerttext = document.querySelector("#content > div > div > div");
+	alerttext.innerHTML = text2;
+
+}
 }
 function GetVpLogoImage() {
   return document.getElementById("imgLogo").src;
