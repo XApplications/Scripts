@@ -1,9 +1,11 @@
+const queryString_vpscriptsjs = window.location.search;
+const urlParams_vpscriptsjs = new URLSearchParams(queryString_vpscriptsjs);
 var username = document.getElementById("lblUserNameTxt").innerHTML;\
 function GetPageInfo() {
 /* 
 * This code was written by SpookyKipper (https://github.com/SpookyKipper/) and Deveroonie (https://github.com/Deveroonie/)
-*/ 
-	return urlParams.get('option');
+*/ 	
+	return urlParams_vpscriptsjs.get('option');
 }
 function SetPhpVersion(version) 
 /* 
@@ -13,7 +15,7 @@ if (GetPageInfo() == "accountsettings") {
 var PHPVERCHOOSEBTN = document.querySelector("#content > div > table.table > tbody > tr:nth-child(29) > td:nth-child(2) > a");
 PHPVERCHOOSEBTN.parentNode.removeChild(PHPVERCHOOSEBTN);
 var PHPver = document.querySelector("#content > div > table.table > tbody > tr:nth-child(29) > td:nth-child(2)");
-PHPver.innerHTML = PHPver.innerHTML.replace("7.0", version);
+PHPver.innerHTML = version;
 }
 }
 function SetSslPageText(text2) {
