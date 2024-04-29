@@ -1,11 +1,11 @@
-Scripts by X Applications offers new ways to customize your VistaPanel. 
+Scripts by X Applications is a package of scripts for skinning VistaPanel. 
 
 ## How to install
 Login to your MyOwnFreeHost account & click "Your Adverts", and then "Control Panel Advert Control", select your domain and copy & paste the code below: 
 
 ### Load the initial code
 ```js
-<script src="https://cdn.jsdelivr.net/gh/XApplications/Scripts/vistascripts.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/XApplications/Scripts/scripts.js"></script>
 ```
 ### Example code for changing logo to remote URL
 ```js
